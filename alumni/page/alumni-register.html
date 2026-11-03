@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIUB Placement Hub | Alumni Registration</title>
+    <link rel="stylesheet" href="../design/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="../assets/aiub-favicon.png" type="image/png" />
+  </head>
+  <body class="auth-page">
+        <header class="alumni-header">
+      <div class="top-nav-strip">
+        <div class="container nav-top-row">
+          <div class="brand-mini">AIUB Placement Hub</div>
+          <div class="utility-links">
+            <a href="find-jobs.html" class="nav-search"><span>🔍</span> Job Search</a>
+            <a href="https://www.aiub.edu/" target="_blank" rel="noreferrer">AIUB Website</a>
+            <a href="notifications.html">Notifications</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav-strip">
+        <div class="container main-nav-row">
+          <a class="nav-center-mark" href="alumni-dashboard.html" aria-label="AIUB Placement Hub home">
+            <img src="../assets/aiub-seal-small.jpg" alt="AIUB seal" />
+          </a>
+          <nav class="main-navigation" aria-label="Primary navigation">
+            <a href="alumni-dashboard.html">HOME</a>
+            <a href="career-support.html">CAREER SUPPORT</a>
+            <a href="alumni-directory.html">ALUMNI DIRECTORY</a>
+            <a href="companies.html">COMPANIES</a>
+            <a href="find-jobs.html">JOBS &amp; INTERNSHIPS</a>
+            <a href="messages.html">MESSAGES</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="auth-main">
+      <div class="auth-panel">
+        <div class="auth-intro">
+          <h1>Register as an alumnus</h1>
+          <p>Create your alumni account to connect with students, manage jobs, and grow your network.</p>
+        </div>
+
+        <form class="auth-form" action="alumni-dashboard.html" method="get">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="full_name">Full name</label>
+              <input class="form-control" id="full_name" name="full_name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input class="form-control" id="email" name="email" type="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input class="form-control" id="phone" name="phone" type="tel" required />
+            </div>
+            <div class="form-group">
+              <label for="birth_date">Date of birth</label>
+              <input class="form-control" id="birth_date" name="birth_date" type="date" required />
+            </div>
+            <div class="form-group">
+              <label for="alumni_id">Alumni ID</label>
+              <input class="form-control" id="alumni_id" name="alumni_id" type="text" placeholder="19-XXXXX-1" required />
+            </div>
+            <div class="form-group">
+              <label for="department">Department</label>
+              <select id="department" name="department" required>
+                <option value="">Select department</option>
+                <option>CSE</option>
+                <option>EEE</option>
+                <option>BBA</option>
+                <option>Architecture</option>
+                <option>English</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="degree">Degree</label>
+              <select id="degree" name="degree" required>
+                <option value="">Select degree</option>
+                <option>BSc in Computer Science</option>
+                <option>BSc in EEE</option>
+                <option>BBA</option>
+                <option>BA in English</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="graduation_year">Graduation year</label>
+              <input class="form-control" id="graduation_year" name="graduation_year" type="number" min="2000" max="2035" required />
+            </div>
+            <div class="form-group">
+              <label for="employment_status">Employment status</label>
+              <select id="employment_status" name="employment_status" required>
+                <option value="">Select status</option>
+                <option>Employed</option>
+                <option>Self-employed</option>
+                <option>Seeking opportunities</option>
+                <option>Student</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="job_title">Current job title</label>
+              <input class="form-control" id="job_title" name="job_title" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="company_name">Company name</label>
+              <input class="form-control" id="company_name" name="company_name" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="linkedin_url">LinkedIn URL</label>
+              <input class="form-control" id="linkedin_url" name="linkedin_url" type="url" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input class="form-control" id="password" name="password" type="password" required />
+            </div>
+            <div class="form-group">
+              <label for="confirm_password">Confirm password</label>
+              <input class="form-control" id="confirm_password" name="confirm_password" type="password" required />
+            </div>
+          </div>
+
+          <label class="inline-checkbox" for="terms">
+            <input type="checkbox" id="terms" name="terms" required />
+            <span>I agree to the terms and conditions and alumni privacy policy.</span>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Register</button>
+        </form>
+
+        <div class="link-row link-row--space-24">
+          <span>Already have an account?</span>
+          <a class="small-link" href="alumni-login.html">Sign in</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="../assets/aiub-seal-small.jpg" alt="AIUB logo" />
+            <h4>AIUB Placement Hub</h4>
+          </div>
+          <p>Career guidance and professional connections for the AIUB community.</p>
+        </div>
+        <div class="footer-column">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="find-jobs.html">Job openings</a></li>
+            <li><a href="alumni-directory.html">Alumni directory</a></li>
+            <li><a href="companies.html">Companies</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>Account</h5>
+          <ul>
+            <li><a href="alumni-profile.html">My profile</a></li>
+            <li><a href="messages.html">Messages</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h5>Contact</h5>
+          <p>Visit Us<br />408/1 (Old KA 66/1),<br />Kuratoli, Khilkhet,Dhaka 1229, Bangladesh</p>
+          <p>E-mail Us<br /><a href="mailto:careers@aiub.edu">careers@aiub.edu</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">© 2026 American International University-Bangladesh. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>
