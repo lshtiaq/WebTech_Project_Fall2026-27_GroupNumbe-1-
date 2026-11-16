@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Design/AdminStyle.css">
+        <script src="../JS/AdminScript.js"></script>
+
+        <title> Verify Recruiters </title>
+    </head>
+
+    <body onload="loadRecruiters()">
+
+        <div class="header">
+            <img src="../Assets/logo.png" id="logo">
+            <h1> AIUB Alumni Career Portal </h1>
+            <h4> Admin Panel </h4>
+        </div>
+
+        <div class="topnav">
+            <a href="AdminDashboard.html"> Dashboard </a>
+            <a href="AdminUsers.html"> Manage Users </a>
+            <a href="AdminRecruiters.html" class="active"> Verify Recruiters </a>
+            <a href="AdminJobs.html"> Approve Jobs </a>
+            <a href="AdminCompanies.html"> Companies </a>
+            <a href="AdminProfile.html"> My Profile </a>
+            <a href="#" class="logout"> Logout </a>
+        </div>
+
+        <div class="content">
+
+            <h2> Verify Recruiters </h2>
+
+            <div class="filterbar">
+                <label for="RecruiterFilter"> Status: </label>
+                <select id="RecruiterFilter" onchange="filterRecruiters()">
+                    <option value="All"> All </option>
+                    <option value="Pending" selected> Pending </option>
+                    <option value="Verified"> Verified </option>
+                    <option value="Rejected"> Rejected </option>
+                </select>
+
+                <span class="counter" id="RecruiterCount"></span>
+            </div>
+
+            <div class="tablewrap">
+                <table class="list" id="RecruiterTable"></table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h5> Created on 2026 </h5>
+            <h5> Web Technologies Project - Admin Panel </h5>
+        </div>
+
+    </body>
+</html>
