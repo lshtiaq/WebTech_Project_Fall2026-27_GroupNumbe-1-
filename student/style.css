@@ -5,6 +5,7 @@
 body{
     padding: 15px 15px;
 }
+
 .header{
     background-color: white;
     border: 1px solid #27a6c7;
@@ -273,3 +274,143 @@ img{
 .button a:hover{
     background-color: #063d70;
 }
+
+
+
+/* edit profile*/
+
+
+
+.editProfileBody {
+    
+
+    font-size: 20px;
+    background-color: #eaf1f9;
+    margin: 0;
+    padding: 15px 15px;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #d1dfef;
+    padding: 20px 25px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #07549b;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+fieldset {
+    background-color: #f5faff;
+    border: 1px solid #cbdcf0;
+    border-radius: 12px;
+    padding: 30px 25px;
+    margin-bottom: 45px;
+}
+
+legend {
+    font-weight: bold;
+    color: white;
+    background-color: #07549b;
+    padding: 12px 22px;
+    border-radius: 100px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 14px 6px;
+    vertical-align: middle;
+}
+
+td:first-child {
+    width: 28%;
+}
+
+td:last-child {
+    width: 72%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 16px;
+    font-family: Cambria, Cochin, Georgia, Times,
+    'Times New Roman', serif;
+
+    font-size: 20px;
+    border: 1px solid #9bb7d9;
+    border-radius: 8px;
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 4px solid #a5e0f5;
+    border-color: #36b8e8;
+}
+
+input[readonly] {
+    background-color: #e8eef5;
+}
+
+textarea {
+    height: 155px;
+    resize: none;
+}
+
+.counter {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.buttons {
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 15px 28px;
+    font-family: Cambria, Cochin, Georgia, Times,
+    'Times New Roman', serif;
+
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+#submit {
+    background-color: #07549b;
+}
+
+#reset {
+    background-color: #df5050;
+}
+
+#submit:hover {
+    background-color: #063d70;
+}
+
+#reset:hover {
+    background-color: #bd3333;
+}
+
+
