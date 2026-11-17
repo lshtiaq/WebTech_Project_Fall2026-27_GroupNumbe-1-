@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Design/AdminStyle.css">
+        <script src="../JS/AdminScript.js"></script>
+
+        <title> Manage Users </title>
+    </head>
+
+    <body onload="loadUsers()">
+
+        <div class="header">
+            <img src="../Assets/logo.png" id="logo">
+            <h1> AIUB Alumni Career Portal </h1>
+            <h4> Admin Panel </h4>
+        </div>
+
+        <div class="topnav">
+            <a href="AdminDashboard.html"> Dashboard </a>
+            <a href="AdminUsers.html" class="active"> Manage Users </a>
+            <a href="AdminRecruiters.html"> Verify Recruiters </a>
+            <a href="AdminJobs.html"> Approve Jobs </a>
+            <a href="AdminCompanies.html"> Companies </a>
+            <a href="AdminProfile.html"> My Profile </a>
+            <a href="#" class="logout"> Logout </a>
+        </div>
+
+        <div class="content">
+
+            <h2> Manage Users </h2>
+
+            <div class="filterbar">
+                <label for="RoleFilter"> Role: </label>
+                <select id="RoleFilter" onchange="filterUsers()">
+                    <option value="All"> All </option>
+                    <option value="Student"> Student </option>
+                    <option value="Alumni"> Alumni </option>
+                    <option value="Recruiter"> Recruiter </option>
+                </select>
+
+                <label for="SearchUser"> Search: </label>
+                <input type="text" id="SearchUser" placeholder="Name or email" onkeyup="filterUsers()">
+
+                <span class="counter" id="UserCount"></span>
+            </div>
+
+            <div class="tablewrap">
+                <table class="list" id="UserTable"></table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h5> Created on 2026 </h5>
+            <h5> Web Technologies Project - Admin Panel </h5>
+        </div>
+
+    </body>
+</html>
