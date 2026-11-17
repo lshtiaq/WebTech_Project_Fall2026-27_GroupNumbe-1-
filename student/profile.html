@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
     <title>AIUB PLACEMENT HUB</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
 
   <body>
     <header class="header">
       <div class="logo-section">
         <div class="logo">
-          <img src="aiub-logo.png" />
+          <img src="aiub-logo.png" alt="AIUB Logo" />
         </div>
 
         <div class="brand-name">
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="user-section">
-        <span>Welcome, ISHTIAQ AHMED</span>
+        <span id="userNameHeader">Welcome, ISHTIAQ AHMED</span>
         <a href="#">Logout</a>
       </div>
     </header>
@@ -38,58 +38,56 @@
 
       <div class="profile-container">
         <section class="profile-header">
-          <div class="profile-picture">IA</div>
+          <div class="profile-picture" id="profileInitials">IA</div>
 
           <div class="profile-details">
-            <h1>Ishtiaq Ahmed</h1>
-
-            <p>24-59556-3</p>
+            <h1 id="profileName">Ishtiaq Ahmed</h1>
+            <p id="profileStudentID">24-59556-3</p>
           </div>
         </section>
 
-        <!-- Student Information -->
         <section class="student-information">
           <div class="profile-heading">Student Information</div>
 
           <div class="information-table">
             <div class="info-row">
               <div class="info-label">Email</div>
-              <div class="info-value">24-59556-3@student.aiub.edu</div>
+              <div class="info-value" id="profileEmail">24-59556-3@student.aiub.edu</div>
             </div>
 
             <div class="info-row">
               <div class="info-label">Phone</div>
-              <div class="info-value">01766230046</div>
+              <div class="info-value" id="profilePhone">01766230046</div>
             </div>
 
             <div class="info-row">
               <div class="info-label">Department</div>
-              <div class="info-value">CS</div>
+              <div class="info-value" id="profileDepartment">CS</div>
             </div>
 
             <div class="info-row">
               <div class="info-label">CGPA</div>
-              <div class="info-value">3.75</div>
+              <div class="info-value" id="profileCGPA">3.75</div>
             </div>
 
             <div class="info-row">
               <div class="info-label">Graduation Year</div>
-              <div class="info-value">2027</div>
+              <div class="info-value" id="profileGraduationYear">2027</div>
             </div>
 
             <div class="info-row">
               <div class="info-label">Skills</div>
-              <div class="info-value">Html</div>
+              <div class="info-value" id="profileSkills">Html</div>
             </div>
 
             <div class="info-row">
               <div class="info-label">LinkedIn</div>
-              <div class="info-value not-added">Not added yet</div>
+              <div class="info-value not-added" id="profileLinkedIn">Not added yet</div>
             </div>
 
             <div class="info-row">
               <div class="info-label">Bio</div>
-              <div class="info-value not-added">Not added yet</div>
+              <div class="info-value not-added" id="profileBio">Not added yet</div>
             </div>
           </div>
         </section>
