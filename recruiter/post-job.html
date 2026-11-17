@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Post Job</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <span style="color:#1a4f9c;">AIUB Placement Hub</span>
+    <span>
+      <a href="companies.html">Job Search</a>
+      <a href="#">AIUB Website</a>
+      <a href="#">Notifications</a>
+    </span>
+  </div>
+
+  <div class="menu">
+    <a href="my-jobs.html">HOME</a>
+    <a href="my-jobs.html">MY JOBS</a>
+    <a href="post-job.html">POST A JOB</a>
+    <div class="logo"><img src="logo.png" alt="AIUB logo"></div>
+    <a href="companies.html">COMPANIES</a>
+    <a href="#">MY ACCOUNT</a>
+  </div>
+
+  <div class="box">
+    <p class="label">RECRUITER</p>
+    <h1>Post a Job</h1>
+
+    <form class="card" action="my-jobs.html">
+      <label>Job Title</label>
+      <input type="text" name="title">
+
+      <label>Company Name</label>
+      <input type="text" name="company">
+
+      <label>Job Type</label>
+      <select name="type">
+        <option>Full-time</option>
+        <option>Part-time</option>
+        <option>Internship</option>
+      </select>
+
+      <label>Deadline</label>
+      <input type="date" name="deadline">
+
+      <label>Description</label>
+      <textarea name="description" rows="5"></textarea>
+
+      <button type="submit">Post Job</button>
+    </form>
+  </div>
+</body>
+</html>
