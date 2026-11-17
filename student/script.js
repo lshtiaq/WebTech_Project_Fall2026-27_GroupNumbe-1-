@@ -224,7 +224,7 @@ function validateLinkedIn()
 {
     let LinkedIn = document.getElementById("LinkedIn").value.trim();
     let Error = document.getElementById("LinkedInError");
-    let RegularExpression = /^https:\/\/(www\.)?linkedin\.com\/in\/[A-Za-z0-9_% -]+\/?$/i;
+    let RegularExpression = /^https:\/\/(www\.)?linkedin\.com\/in\/[A-Za-z0-9_.%-]+\/?$/i;
 
     if(LinkedIn === "")
     {
