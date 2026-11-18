@@ -1,4 +1,3 @@
-// Default student information
 let defaultProfile = {
     FullName: "Ishtiaq Ahmed",
     StudentID: "24-59556-3",
@@ -31,7 +30,7 @@ function getProfileData()
     }
 }
 
-// Load saved information in the edit form
+
 function loadEditProfile()
 {
     let profile = getProfileData();
@@ -50,7 +49,7 @@ function loadEditProfile()
     updateBioCounter();
 }
 
-// Validate all form information
+
 function collect_data()
 {
     let Name = validName();
@@ -85,6 +84,11 @@ function validName()
     else if(Name.length < 6 || !RegularExpression.test(Name))
     {
         Error.textContent = "Name must contain at least 6 letters and valid characters.";
+        return false;
+    }
+    else if(Name.length > 20 || !RegularExpression.test(Name))
+    {
+        Error.textContent = "Name must be less than 20 letters and valid characters.";
         return false;
     }
     else
@@ -260,7 +264,7 @@ function validateBio()
     }
 }
 
-// Save updated information in localStorage
+
 function saveProfile()
 {
     let profile = {
@@ -280,7 +284,7 @@ function saveProfile()
     window.location.href = "profile.html";
 }
 
-// Show saved information in My Profile
+
 function showProfile()
 {
     let profile = getProfileData();
@@ -309,7 +313,7 @@ function showProfile()
     document.getElementById("profileBio").textContent = profile.Bio || "Not added yet";
 }
 
-// Update the header and dashboard name
+
 function showUserName()
 {
     let profile = getProfileData();
@@ -327,7 +331,7 @@ function showUserName()
     }
 }
 
-// Update Bio character count
+
 function updateBioCounter()
 {
     let Bio = document.getElementById("Bio");
@@ -339,7 +343,7 @@ function updateBioCounter()
     }
 }
 
-// Cancel editing and return to My Profile
+
 function cancelEdit()
 {
     window.location.href = "profile.html";

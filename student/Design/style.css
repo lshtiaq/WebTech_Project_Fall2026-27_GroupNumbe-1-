@@ -277,7 +277,7 @@ img{
 
 
 
-/* edit profile*/
+/* edit profile er part*/
 
 
 
@@ -415,7 +415,7 @@ input[type="reset"] {
 
 
 
-/* Form validation messages */
+
 .validation-error {
     color: red;
     font-size: 14px;
