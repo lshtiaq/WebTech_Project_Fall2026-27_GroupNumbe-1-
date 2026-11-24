@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Design/AdminStyle.css">
+        <script src="../JS/AdminScript.js"></script>
+
+        <title> Approve Jobs </title>
+    </head>
+
+    <body onload="loadJobs()">
+
+        <div class="header">
+            <img src="../Assets/logo.png" id="logo">
+            <h1> AIUB Alumni Career Portal </h1>
+            <h4> Admin Panel </h4>
+        </div>
+
+        <div class="topnav">
+            <a href="AdminDashboard.html"> Dashboard </a>
+            <a href="AdminUsers.html"> Manage Users </a>
+            <a href="AdminRecruiters.html"> Verify Recruiters </a>
+            <a href="AdminJobs.html" class="active"> Approve Jobs </a>
+            <a href="AdminCompanies.html"> Companies </a>
+            <a href="AdminProfile.html"> My Profile </a>
+            <a href="../../index.html" class="logout"> Logout </a>
+        </div>
+
+        <div class="content">
+
+            <h2> Approve Jobs </h2>
+
+            <div class="filterbar">
+                <label for="JobFilter"> Status: </label>
+                <select id="JobFilter" onchange="filterJobs()">
+                    <option value="All"> All </option>
+                    <option value="Pending" selected> Pending </option>
+                    <option value="Approved"> Approved </option>
+                    <option value="Rejected"> Rejected </option>
+                </select>
+
+                <label for="RejectReason"> Reject reason: </label>
+                <input type="text" id="RejectReason" placeholder="Write reason, then click Reject">
+
+                <span class="counter" id="JobCount"></span>
+            </div>
+
+            <p class="error" id="JobMessage"></p>
+
+            <div class="tablewrap">
+                <table class="list" id="JobTable"></table>
+            </div>
+
+            <div id="JobDetail"></div>
+        </div>
+
+        <div class="footer">
+            <h5> Created on 2026 </h5>
+            <h5> Web Technologies Project - Admin Panel </h5>
+        </div>
+
+    </body>
+</html>

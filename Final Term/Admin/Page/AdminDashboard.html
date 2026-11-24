@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Design/AdminStyle.css">
+        <script src="../JS/AdminScript.js"></script>
+
+        <title> Admin Dashboard </title>
+    </head>
+
+    <body onload="loadDashboard()">
+
+        <div class="header">
+            <img src="../Assets/logo.png" id="logo">
+            <h1> AIUB Alumni Career Portal </h1>
+            <h4> Admin Panel </h4>
+        </div>
+
+        <div class="topnav">
+            <a href="AdminDashboard.html" class="active"> Dashboard </a>
+            <a href="AdminUsers.html"> Manage Users </a>
+            <a href="AdminRecruiters.html"> Verify Recruiters </a>
+            <a href="AdminJobs.html"> Approve Jobs </a>
+            <a href="AdminCompanies.html"> Companies </a>
+            <a href="AdminProfile.html"> My Profile </a>
+            <a href="../../index.html" class="logout"> Logout </a>
+        </div>
+
+        <div class="content">
+
+            <h2> Admin Dashboard </h2>
+
+            <div class="notice" id="NoticeBox"></div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3 id="TotalStudents">0</h3>
+                    <p> Students </p>
+                </div>
+                <div class="card">
+                    <h3 id="TotalAlumni">0</h3>
+                    <p> Alumni </p>
+                </div>
+                <div class="card">
+                    <h3 id="TotalRecruiters">0</h3>
+                    <p> Recruiters </p>
+                </div>
+                <div class="card">
+                    <h3 id="TotalCompanies">0</h3>
+                    <p> Companies </p>
+                </div>
+                <div class="card pending">
+                    <h3 id="PendingRecruiters">0</h3>
+                    <p> Pending Recruiters </p>
+                </div>
+                <div class="card pending">
+                    <h3 id="PendingJobs">0</h3>
+                    <p> Pending Jobs </p>
+                </div>
+            </div>
+
+            <h3> Quick Actions </h3>
+            <div class="quicklinks">
+                <a href="AdminUsers.html"> Manage Users </a>
+                <a href="AdminRecruiters.html"> Verify Recruiters </a>
+                <a href="AdminJobs.html"> Approve Jobs </a>
+                <a href="AdminCompanies.html"> Manage Companies </a>
+            </div>
+
+            <h3> Recent Activity </h3>
+            <ul class="activity" id="ActivityList"></ul>
+        </div>
+
+        <div class="footer">
+            <h5> Created on 2026 </h5>
+            <h5> Web Technologies Project - Admin Panel </h5>
+        </div>
+
+    </body>
+</html>

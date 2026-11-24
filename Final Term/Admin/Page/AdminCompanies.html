@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Design/AdminStyle.css">
+        <script src="../JS/AdminScript.js"></script>
+
+        <title> Manage Companies </title>
+    </head>
+
+    <body onload="loadCompanies()">
+
+        <div class="header">
+            <img src="../Assets/logo.png" id="logo">
+            <h1> AIUB Alumni Career Portal </h1>
+            <h4> Admin Panel </h4>
+        </div>
+
+        <div class="topnav">
+            <a href="AdminDashboard.html"> Dashboard </a>
+            <a href="AdminUsers.html"> Manage Users </a>
+            <a href="AdminRecruiters.html"> Verify Recruiters </a>
+            <a href="AdminJobs.html"> Approve Jobs </a>
+            <a href="AdminCompanies.html" class="active"> Companies </a>
+            <a href="AdminProfile.html"> My Profile </a>
+            <a href="../../index.html" class="logout"> Logout </a>
+        </div>
+
+        <div class="content">
+
+            <h2> Manage Companies </h2>
+
+            <p class="counter" id="CompanyCount"></p>
+
+            <div class="tablewrap">
+                <table class="list" id="CompanyTable"></table>
+            </div>
+
+            <br>
+            <form id="CompanyForm" onsubmit="return collect_company()" novalidate>
+                <fieldset>
+                    <legend> Add New Company </legend>
+                    <table class="formtable">
+                        <tr>
+                            <td> <label for="CompanyName"> Company Name: </label> </td>
+                            <td> <input type="text" id="CompanyName" name="CompanyName" placeholder="Enter Company Name">
+                            <p class="error" id="CompanyNameError"></p> </td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="CompanyIndustry"> Industry: </label> </td>
+                            <td>
+                                <select class="full" id="CompanyIndustry" name="CompanyIndustry">
+                                    <option value=""> Select Industry </option>
+                                    <option value="Software"> Software </option>
+                                    <option value="Data"> Data </option>
+                                    <option value="Design"> Design </option>
+                                    <option value="Telecom"> Telecom </option>
+                                    <option value="Banking"> Banking </option>
+                                </select>
+                                <p class="error" id="IndustryError"></p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="CompanyLocation"> Location: </label> </td>
+                            <td> <input type="text" id="CompanyLocation" name="CompanyLocation" placeholder="Enter Location">
+                            <p class="error" id="CompanyLocationError"></p> </td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="CompanyWebsite"> Website: </label> </td>
+                            <td> <input type="text" id="CompanyWebsite" name="CompanyWebsite" placeholder="https://www.example.com">
+                            <p class="error" id="WebsiteError"></p> </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <input type="submit" value="Add Company">
+                <input type="reset" value="Reset">
+                <p class="success" id="CompanyMessage"></p>
+            </form>
+        </div>
+
+        <div class="footer">
+            <h5> Created on 2026 </h5>
+            <h5> Web Technologies Project - Admin Panel </h5>
+        </div>
+
+    </body>
+</html>

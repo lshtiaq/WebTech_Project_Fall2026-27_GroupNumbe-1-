@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Design/AdminStyle.css">
+        <script src="../JS/AdminScript.js"></script>
+
+        <title> Admin Profile </title>
+    </head>
+
+    <body onload="loadProfile()">
+
+        <div class="header">
+            <img src="../Assets/logo.png" id="logo">
+            <h1> AIUB Alumni Career Portal </h1>
+            <h4> Admin Panel </h4>
+        </div>
+
+        <div class="topnav">
+            <a href="AdminDashboard.html"> Dashboard </a>
+            <a href="AdminUsers.html"> Manage Users </a>
+            <a href="AdminRecruiters.html"> Verify Recruiters </a>
+            <a href="AdminJobs.html"> Approve Jobs </a>
+            <a href="AdminCompanies.html"> Companies </a>
+            <a href="AdminProfile.html" class="active"> My Profile </a>
+            <a href="../../index.html" class="logout"> Logout </a>
+        </div>
+
+        <div class="content">
+
+            <h2> My Profile </h2>
+
+            <div class="profilecard">
+                <p><b>Name:</b> <span id="ShowName"></span></p>
+                <p><b>Email:</b> <span id="ShowEmail"></span></p>
+                <p><b>Phone:</b> <span id="ShowPhone"></span></p>
+                <p><b>Role:</b> <span id="ShowRole"></span></p>
+                <p><b>Last Login:</b> <span id="ShowLogin"></span></p>
+            </div>
+
+            <form onsubmit="return collect_admin_data()" novalidate>
+                <fieldset>
+                    <legend> Edit Information </legend>
+                    <table class="formtable">
+                        <tr>
+                            <td> <label for="AdminName"> Full Name: </label> </td>
+                            <td> <input type="text" id="AdminName" name="AdminName" placeholder="Enter Your Name">
+                            <p class="error" id="AdminNameError"></p> </td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="AdminEmail"> Email: </label> </td>
+                            <td> <input type="email" id="AdminEmail" name="AdminEmail" placeholder="Enter Your Email">
+                            <p class="error" id="AdminEmailError"></p> </td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="AdminPhone"> Phone: </label> </td>
+                            <td> <input type="text" id="AdminPhone" name="AdminPhone" placeholder="01XXXXXXXXX">
+                            <p class="error" id="AdminPhoneError"></p> </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Change Password (optional) </legend>
+                    <table class="formtable">
+                        <tr>
+                            <td> <label for="NewPassword"> New Password: </label> </td>
+                            <td> <input type="password" id="NewPassword" name="NewPassword" placeholder="At least 8 characters">
+                            <p class="error" id="NewPasswordError"></p> </td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="ConfirmPassword"> Confirm Password: </label> </td>
+                            <td> <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Re-enter Password">
+                            <p class="error" id="ConfirmPasswordError"></p> </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <input type="submit" value="Save Changes">
+                <input type="reset" value="Reset">
+                <p class="success" id="ProfileMessage"></p>
+            </form>
+        </div>
+
+        <div class="footer">
+            <h5> Created on 2026 </h5>
+            <h5> Web Technologies Project - Admin Panel </h5>
+        </div>
+
+    </body>
+</html>
