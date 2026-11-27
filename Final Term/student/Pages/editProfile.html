@@ -26,17 +26,18 @@
       </div>
     </header>
 
-    <div class="container">
-        <aside class="sidebar">
+    <div class="main-container">
+      <aside class="sidebar">
         <nav>
           <a href="dashboard.html">Dashboard</a>
-          <a href="profile.html" class="active">My Profile</a>
-          <a href="../../alumni/page/alumni-directory.html">Alumni List</a>
-          <a href="../../recruiter/my-jobs.html">Job Listings</a>
+          <a href="profile.html">My Profile</a>
+          <a href="editProfile.html" class="active">Edit Profile</a>
+          <a href="alumni.html">Alumni List</a>
+          <a href="jobs.html">Job Listings</a>
         </nav>
       </aside>
-      
-        <h1>Edit Profile</h1>
+
+      <div class="container">
 
         <form onsubmit="return collect_data()" novalidate>
             <fieldset>
@@ -148,6 +149,7 @@
                 <button type="button" id="reset" onclick="cancelEdit()">Cancel</button>
             </div>
         </form>
+      </div>
     </div>
 </body>
 </html>

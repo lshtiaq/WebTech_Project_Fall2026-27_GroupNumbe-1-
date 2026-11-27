@@ -51,6 +51,7 @@ img{
     color: #07549b;
     font-weight: bold;
     text-decoration: none;
+    font-size: 16px;
 }
 
 
@@ -284,7 +285,7 @@ img{
 .editProfileBody {
     
 
-    font-size: 20px;
+    font-size: 18px;
     background-color: #eaf1f9;
     margin: 0;
     padding: 15px 15px;
@@ -294,27 +295,21 @@ img{
     background-color: white;
     border: 1px solid #d1dfef;
     padding: 20px 25px;
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
-h1 {
-    color: #07549b;
-    font-size: 32px;
-    margin-top: 10px;
-    margin-bottom: 35px;
+    width: 80%;
 }
 
 fieldset {
     background-color: #f5faff;
     border: 1px solid #cbdcf0;
     border-radius: 12px;
-    padding: 30px 25px;
-    margin-bottom: 45px;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+    /* font-weight: bold; */
 }
 
 legend {
     font-weight: bold;
+    font-size: 17px;
     color: white;
     background-color: #07549b;
     padding: 12px 22px;
@@ -347,11 +342,10 @@ input[type="number"],
 select,
 textarea {
     width: 100%;
-    padding: 16px;
+    padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times,
     'Times New Roman', serif;
-
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid #9bb7d9;
     border-radius: 8px;
     background-color: white;
@@ -380,7 +374,7 @@ textarea {
 }
 
 .buttons {
-    margin-top: -20px;
+    margin-top: 20px;
     margin-bottom: 5px;
 }
 
@@ -433,3 +427,32 @@ button#reset {
     cursor: pointer;
     color: white;
 }
+
+/* @media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .dashboard,
+    .profile-container,
+    .container {
+        width: 100%;
+    }
+
+    .container td,
+    .container td:first-child,
+    .container td:last-child {
+        display: block;
+        width: 100%;
+        padding: 6px 0;
+    }
+} */
